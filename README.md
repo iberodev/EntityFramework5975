@@ -20,8 +20,8 @@ dotnet ef database update
 * Run the application
 * Trigger the sample by sending a GET request to:
 ```
-GET localhost: http://localhost:57092/api/memoryfilter will return a list of ports whose code starts with "NZ". The filter happens in memory and it is correct.
-GET localhost: http://localhost:57092/api/dbfilter will return a list of ports whose code starts with "NZ". The filter happens in database and it is inccorect since instead applying "NZ", the SQL applies a "?"
+GET localhost: http://localhost:57092/api/memory/NZ will return a list of ports whose code starts with "NZ". The filter happens in memory and it is correct.
+GET localhost: http://localhost:57092/api/db/NZ will return a list of ports whose code starts with "NZ". The filter happens in database and it is inccorect since instead applying "NZ", the SQL applies a "?"
 ```
 
 The sample will show that EF Core 1.0.0 does not handle properly filtering on fields of type char. This was working fine in EF Core RC2
