@@ -13,21 +13,19 @@ namespace FilteringSample.Controllers
             _portRepository = personRepository;
         }
 
-        const string SAMPLE_FILTER = "NZ";
-
         [HttpGet]
-        [Route("memoryfilter")]
-        public IActionResult GetPortsFilteredInMemory()
+        [Route("memory/{filter}")]
+        public IActionResult GetPortsFilteredInMemory(string filter)
         {
-            var result = _portRepository.GetPortsFilteredInMemory(SAMPLE_FILTER);
+            var result = _portRepository.GetPortsFilteredInMemory(filter);
             return Ok(result);
         }
 
         [HttpGet]
-        [Route("dbfilter")]
-        public IActionResult GetPortsFilteredWithEntity()
+        [Route("db/{filter}")]
+        public IActionResult GetPortsFilteredWithEntity(string filter)
         {
-            var result = _portRepository.GetPortsFilteredInDatabase(SAMPLE_FILTER);
+            var result = _portRepository.GetPortsFilteredInDatabase(filter);
             return Ok(result);
         }
     }

@@ -8,8 +8,8 @@ using FilteringSample.SqlServer;
 namespace FilteringSample.Migrations
 {
     [DbContext(typeof(SampleContext))]
-    [Migration("20160705035836_InitialDatabase")]
-    partial class InitialDatabase
+    [Migration("20160705044839_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

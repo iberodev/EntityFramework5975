@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:57092/api/memoryfilter",
+      "applicationUrl": "http://localhost:57092/api/memory/NZ",
       "sslPort": 0
     }
   },
