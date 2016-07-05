@@ -1,4 +1,4 @@
-# EntityFramework5481
+# EntityFramework5975
 
 This is a Sample project created with ASP.NET Core 1.0.0 and EF Core 1.0.0
 to show the issue with [the filtering problem] (https://github.com/aspnet/EntityFramework/issues/5975)
